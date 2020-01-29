@@ -9,15 +9,15 @@ lass CouponController < ApplicationController
   end
 
   def new
-    @student=Student.new
+    @coupons=Coupont.new
   end
 
   def create
-  @student=Student.new
-  @student.first_name = params[:first_name]
-  @student.last_name = params[:last_name]
-  @student.save
-  redirect_to student_path(@student)
+  @coupon=Coupon.new
+  @coupon.coupon_code = params[:coupon_code]
+  @coupont.store = params[:coupon_code]
+  @coupon.save
+  redirect_to coupon_path(@coupon)
 end
 
 end
