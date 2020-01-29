@@ -1,11 +1,11 @@
 lass CouponController < ApplicationController
   
   def index
-    @coupons = Student.all
+    @coupons = Coupon.all
   end
 
   def show
-    @student = Student.find(params[:id])
+    @coupons = Coupon.find(params[:id])
   end
 
   def new
